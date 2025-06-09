@@ -32,7 +32,7 @@ const services = [
 const Services = () => {
   return (
     <section className="py-20 px-8 bg-gradient-to-br from-[#fffaf3] via-[#f8f1e4] to-[#f0e7d3] text-center relative overflow-hidden">
-      
+
       {/* Heading */}
       <motion.h2
         initial={{ opacity: 0, y: -30 }}
@@ -43,7 +43,7 @@ const Services = () => {
       >
         Our Services
       </motion.h2>
-      
+
       {/* Services Grid */}
       <motion.div
         initial="hidden"
@@ -72,8 +72,9 @@ const Services = () => {
             {/* Glow on hover */}
             <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-[#ffecd2] to-[#fcb69f] opacity-0 group-hover:opacity-10 transition duration-500 z-0"></div>
 
-            {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 flex items-center justify-center transition duration-500 z-20">
+            {/* Hover Overlay - MOBILE FRIENDLY */}
+            <div className="absolute inset-0 bg-black/30 flex items-center justify-center transition duration-500 z-20
+              opacity-100 sm:opacity-0 sm:group-hover:opacity-100">
               <button className="px-6 py-2 bg-gradient-to-r from-[#ff7e5f] to-[#feb47b] text-white font-semibold rounded-full shadow-md hover:scale-105 transition-transform">
                 View More
               </button>
